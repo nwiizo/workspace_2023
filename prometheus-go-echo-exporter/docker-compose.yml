@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  echo_exporter:
+    build: 
+      context: .
+      dockerfile: Dockerfile_exporter
+    ports:
+      - "2121:2121"
+
+  prometheus:
+    image: prom/prometheus:latest
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    command:
+      - "--config.file=/etc/prometheus/prometheus.yml"
+    ports:
+      - "9090:9090"
