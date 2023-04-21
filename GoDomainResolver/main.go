@@ -11,8 +11,24 @@ import (
 	"time"
 )
 
-const charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+const (
+	charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+	intset  = "1234567890"
+)
 
+// randNum generates a random number of the specified length
+// for example, randNum(4) will generate a random number of length 4
+func randNum(length int) string {
+	rand.Seed(time.Now().UnixNano())
+	result := make([]byte, length)
+	for i := range result {
+		result[i] = intset[rand.Intn(len(intset))]
+	}
+	return string(result)
+}
+
+// randomString generates a random string of the specified length
+// for example, randomString(10) will generate a random string of length 10
 func randomString(length int) string {
 	rand.Seed(time.Now().UnixNano())
 	result := make([]byte, length)
@@ -46,7 +62,7 @@ func main() {
 	var wg sync.WaitGroup
 
 	for i := 0; i < numWorkers; i++ {
-		randomName := randomString(10) + ".com"
+		randomName := randomString(10) + randNum(4) + ".com"
 		wg.Add(1)
 		go resolveName(randomName, &wg)
 	}
