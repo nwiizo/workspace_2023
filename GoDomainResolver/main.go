@@ -14,6 +14,7 @@ import (
 const (
 	charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 	intset  = "1234567890"
+	emoji   = "😀😁😂🤣😃😄😅😆😉😊😋😎😍😘😗😙😚😇🤗🤩🤔🤨😐😑😶😏😣😥😮"
 )
 
 // randNum generates a random number of the specified length
@@ -38,6 +39,7 @@ func randomString(length int) string {
 	return string(result)
 }
 
+// resolveName resolves a name and prints the result
 func resolveName(name string, wg *sync.WaitGroup) {
 	defer wg.Done()
 
