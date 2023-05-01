@@ -15,6 +15,7 @@ const (
 	charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 	intset  = "1234567890"
 	emoji   = "😀😁😂🤣😃😄😅😆😉😊😋😎😍😘😗😙😚😇🤗🤩🤔🤨😐😑😶😏😣😥😮"
+	kansuji = "一二三四五六七八九十百千万億兆京垓"
 )
 
 // randNum generates a random number of the specified length

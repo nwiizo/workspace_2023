@@ -7,6 +7,8 @@ import (
 	"testing"
 )
 
+// test cases for randomString function
+// テストを書く理由について: test を書くことで、コードの動作を確認できる。また、コードの変更によって、意図しない動作が起きないことを確認できる。
 func TestRandomString(t *testing.T) {
 	length := 10
 	randomStr := randomString(length)
