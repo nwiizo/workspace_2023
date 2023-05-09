@@ -8,6 +8,7 @@ import (
 	"github.com/labstack/echo/v4/middleware"
 )
 
+// Credentials is a struct for login credentials
 type Credentials struct {
 	Email    string `json:"email"`
 	Password string `json:"password"`

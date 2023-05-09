@@ -5,12 +5,16 @@ import (
 	"errors"
 	"fmt"
 	"io"
+	"os"
 
 	openai "github.com/sashabaranov/go-openai"
 )
 
 func main() {
-	c := openai.NewClient("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")
+	// 環境変数からAPIキーを取得
+	apiKey := os.Getenv("OPENAI_API_KEY")
+
+	c := openai.NewClient(apiKey)
 	ctx := context.Background()
 
 	req := openai.ChatCompletionRequest{
