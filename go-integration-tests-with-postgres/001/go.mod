@@ -3,9 +3,9 @@ module 001
 go 1.20
 
 require (
+	github.com/sirupsen/logrus v1.9.2
 	github.com/lib/pq v1.10.9
 	github.com/ory/dockertest/v3 v3.10.0
-	github.com/sirupsen/logrus v1.9.0
 )
 
 require (
