@@ -25,6 +25,6 @@ func main() {
 		fmt.Printf("ChatCompletion error: %v\n", err)
 		return
 	}
-
+	fmt.Println(resp.Choices[0].Message)
 	fmt.Println(resp.Choices[0].Message.Content)
 }
