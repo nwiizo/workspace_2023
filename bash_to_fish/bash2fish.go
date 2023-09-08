@@ -64,6 +64,8 @@ func convertToFish(bashCommand string) string {
 	return fishCommand
 }
 
+// Main function
+// Reads the Bash one-liner from stdin and prints the converted Fish one-liner to stdout
 func main() {
 	fmt.Println("Enter the Bash one-liner:")
 	scanner := bufio.NewScanner(os.Stdin)
