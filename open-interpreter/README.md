@@ -1,10 +1,11 @@
 # open-interpreter-docker
 
 ## Docker Build
+no set openai api key
 ```sh
 sudo docker build -t open-interpreter-docker .
 ```
-or
+set build with openai api key
 ```sh
 sudo docker build --build-arg OPENAI_API_KEY_ARG=sk-xxx -t open-interpreter-docker .
 ```
