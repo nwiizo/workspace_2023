@@ -1,0 +1,15 @@
+__pycache__
+*.swp
+*.pyc
+.idea/
+.tox/
+*.egg*
+dist/
+scm-source.json
+.cache/
+.coverage
+*.bak
+htmlcov/
+.pytest_cache/
+.mypy_cache
+.vscode/
