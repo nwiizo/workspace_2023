@@ -8,3 +8,5 @@
 # Not To Do list
 - [ ] Read manga on days other than the 1st of every month.
 - [ ] Programming in languages other than golang
+
+本当に目標を達成するつもりがあるのか？
