@@ -6,3 +6,5 @@ github.com/sashabaranov/go-openai v1.14.1 h1:jqfkdj8XHnBF84oi2aNtT8Ktp3EJ0MfuVjv
 github.com/sashabaranov/go-openai v1.14.1/go.mod h1:lj5b/K+zjTSFxVLijLSTDZuP7adOgerWeFyZLUhAKRg=
 github.com/sashabaranov/go-openai v1.15.2 h1:0PW+ttxe+UNYKDkA1KTly7K6YhFBqnVBbblQ3t8AfY4=
 github.com/sashabaranov/go-openai v1.15.2/go.mod h1:lj5b/K+zjTSFxVLijLSTDZuP7adOgerWeFyZLUhAKRg=
+github.com/sashabaranov/go-openai v1.17.11 h1:XVr00J8JymJVx8Hjbh/5mG0V4PQHRarBU3v7k2x6MR0=
+github.com/sashabaranov/go-openai v1.17.11/go.mod h1:lj5b/K+zjTSFxVLijLSTDZuP7adOgerWeFyZLUhAKRg=
